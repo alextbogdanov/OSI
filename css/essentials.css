@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #1C2327;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+body.toggled {
+    overflow: hidden;
+}
+
+.body-wrapper {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    box-shadow: -60px 0px 75px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -60px 0px 75px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -60px 0px 75px -4px rgba(0,0,0,0.75);
+    transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -moz-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -o-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -webkit-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+}
+
+.body-wrapper.toggled {
+    margin-left: -330px;
+}
+
+::selection {
+    background-color: #f3f4f5;
+    color: #1C2327;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background-color: #f3f4f5;
+    color: #1C2327;
+    text-shadow: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* TOP NAV */
+
+.toggle-sidenav {
+    cursor: pointer;
+}
+
+.nav {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.nav.blue {
+    background-color: #232b34;
+}
+
+.nav #logo:link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 0.9em;
+    font-weight: 300;
+    text-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+
+.nav #logo:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav .toggle-sidenav {
+    font-size: 32px;
+    color: #fff;
+    float: right;
+    text-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
+    padding: 15px 0;
+}
+
+/* SIDENAV */
+
+.sidenav {
+    position: absolute;
+    width: 330px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    z-index: 90;
+    padding: 25px 30px;
+    transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -moz-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -o-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    -webkit-transition: all 200ms cubic-bezier(0.2, 0.3, 0.25, 0.9);
+}
+
+.close-sidenav {
+    cursor: pointer;
+    font-size: 32px;
+    float: right;
+}
+
+.sidenav-section-title {
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.sidenav-section-title:first-of-type {
+    margin-top: 60px;
+}
+
+.sidenav-section {
+    margin: 18px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidenav-section li {
+    margin-bottom: 10px;
+}
+
+.sidenav-section li:last-child {
+    margin-bottom: 0;
+}
+
+.sidenav-section li a:link {
+    color: #1C2327;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.sidenav-section li a:visited {
+    color: #1C2327;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    display: block;
+    padding: 15px 30px;
+    background-color: #a87f5d;
+    text-align: right;
+    color: #fff;
+    z-index: 150;
+}
+
+/* JUMBTRONS */
+
+.jumbotron {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.large-jumbotron {
+    height: 75vh;
+    min-height: 460px;
+    max-height: 800px;
+}
+
+.small-jumbotron {
+    background-image: url('../images/jumbotron-images/small-jumbotron.jpg');
+    padding: 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.moto-holder {
+    position: relative;
+    text-align: center;
+    z-index: 100;
+    color: #fff;
+}
+
+.moto-holder h1 {
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.moto-holder h3 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.large-jumbotron .moto-holder {
+    margin-top: 100px;
+}
+
+.large-jumbotron .moto-holder h1 {
+    font-size: 100px;
+
+}
+
+.large-jumbotron .moto-holder h3 {
+    font-size: 42px;
+}
+
+.small-jumbotron .moto-holder h1 {
+    font-size: 50px;
+}
+
+.small-jumbotron .moto-holder h3 {
+    font-size: 24px;
+}
+
+.jumbotron-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.jumbotron-overlay.three-five {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.jumbotron-overlay.five-five {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* WAVES */
+
+.wave {
+    display: block;
+    height: 52px;
+    background-repeat: repeat-x;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-position: center center; 
+}

@@ -1,0 +1,133 @@
+/* SECTION CSS */
+
+.section-title {
+    color: #fff;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+/* JUMBOTRON CSS */
+
+#jumbotron {
+    background-image: url('../images/jumbotron-images/index.jpg');
+}
+
+/* QUICK TOUR CSS */
+
+#quick-tour-wrapper {
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+#quick-tour-wrapper a:link {
+    text-decoration: none;
+}
+
+#quick-tour-wrapper a:visited {
+    text-decoration: none;
+}
+
+.quick-tour {
+    width: calc(33.3333% - 20px);
+    width: -webkit-calc(33.3333% - 20px);
+    width: -moz-calc(33.3333% - 20px);
+    display: inline-block;
+    margin: 0 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+}
+
+.quick-tour:first-of-type {
+    margin-left: 0;
+}
+
+.quick-tour:last-of-type {
+    margin-right: 0;
+}
+
+.quick-tour img {
+    max-width: 100px;
+}
+
+.quick-tour p {
+    margin-top: 30px;
+    color: #1C2327;
+}
+
+/* DESCRIPTION CSS */
+
+#brown-waves {
+    background-image: url('../images/svg-icons/index/white-brown-waves.svg');
+}
+
+#description-wrapper {
+    background-color: #e0d3cc;
+    padding: 60px 30px 80px;
+}
+
+#description {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: justify;
+}
+
+#read-more {
+    cursor: pointer;
+    color: #333;
+    text-decoration: underline;
+}
+
+#read-more-text.shown {
+    display: inline;
+}
+
+#read-more-text.hidden {
+    display: none;
+}
+
+/* QUESTIONS CSS */
+
+#blue-waves {
+    background-image: url('../images/svg-icons/index/brown-gray-waves.svg');
+}
+
+#questions-wrapper {
+    background-color: #232b34;
+    padding: 60px 30px 112px;
+}
+
+#questionnaire {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff;
+}
+
+#questionnaire h3 {
+    margin: 0;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 18px;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#questionnaire h3:first-of-type {
+    border-top: 0;
+}
+
+#questionnaire p {
+    margin: 0;
+    font-weight: 300;
+    padding: 30px 35px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: none;
+}

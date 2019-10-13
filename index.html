@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI: Начало</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap" rel="stylesheet">
+    <!-- CSS IMPORTS -->
+    <link rel="stylesheet" href="./css/essentials.css" type="text/css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+</head>
+<body>
+    <!-- SIDENAV -->
+    <div class="sidenav">
+        <span class="close-sidenav"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <h4 class="sidenav-section-title">MENU</h4>
+        <ul class="sidenav-section">
+            <li><a href="./index.html">Начало</a></li>
+            <li><a href="./history.html">История</a></li>
+            <li><a href="./layers.html">Слоеве</a></li>
+            <li><a href="./index.html#questions-wrapper" class="close-sidenav-link">Въпроси</a></li>
+        </ul>
+    </div>
+<div class="body-wrapper">
+    <!-- JUMBOTRON -->
+    <div id="jumbotron" class="jumbotron large-jumbotron">
+        <div class="jumbotron-overlay three-five">
+            <div class="nav clearfix">
+                <a href="./index.html" id="logo">OSI</a>
+                <span class="toggle-sidenav"><i class="fas fa-bars"></i></span>
+            </div>
+            <div class="moto-holder">
+                <h1>OSI модел</h1>
+                <h3>и протоколи</h3>
+            </div>
+        </div>
+    </div>
+    <!-- QUICK TOUR -->
+    <div id="quick-tour-wrapper">
+        <div class="quick-tour">
+            <a href="./history.html">
+                <img src="./images/svg-icons/index/history.svg" alt="История">
+                <p>История</p>
+            </a>
+        </div><div class="quick-tour">
+            <a href="./layers.html">
+                <img src="./images/svg-icons/index/layers.svg" alt="Слоеве">
+                <p>Слоеве</p>
+            </a>
+        </div><div class="quick-tour">
+            <a href="#questions-wrapper">
+                <img src="./images/svg-icons/index/questions.svg" alt="Въпроси">
+                <p>Въпроси</p>
+            </a>
+        </div>
+    </div>
+    <!-- DESCRIPTION -->
+    
+    <div id="description-wrapper">
+        <h2 class="section-title">Какво представлява OSI моделът?</h2>
+        <p id="description">
+            Принципната идея на OSI - модела е, че имаме нива (слоеве) от протоколи, всяко грижещо се за различна дейност по отношение на преноса на данни. Той е стандарт, който производителите на мрежово оборудване използват при проектиране на хардуер, операционни системи и протоколи.
+            <span id="read-more-text" class="hidden">
+                Изграден е от 7 слоя, всеки от които представлява една стъпка в процеса на мрежовите комуникации. 
+                Преди да се изпратят данните по мрежата те преминават последователно през отделните слоеве, като всеки слой добавя своя собствена информация към оригиналната информация. Информацията по мрежата се предава във вид на пакети. При достигане на получаващия компютър, пакетите преминават през отделните слоеве по възходящ ред като всеки слой отстранява допълнителната информация добавена от едноименния слой при изпращането й. По този начин след преминаване през всички слоеве информацията трябва да бъде сглобена, така че да се получи оригиналното съобщение. 
+                Моделът се използва, само когато се пакетират данни за предаване на данни по мрежата, и не се използва, когато се осъществява локален достъп до данните на собствената компютърна система.
+            </span>
+            <spand id="read-more">Покажи повече</span>
+        </p>
+    </div>
+    <!-- QUESTIONS -->
+    <div class="wave" id="blue-waves"></div>
+    <div id="questions-wrapper">
+        <h2 class="section-title">Често задавани въпроси</h2>
+        <div id="questionnaire">
+            <h3 class="question">Кой слой от OSI модела извършва компресиране на данните?</h3>
+                <p class="answer">Слой 6 или Представителен слой</p>
+            <h3 class="question">Кои мрежови устройства работят на ниво „канален слой”?</h3>
+                <p class="answer">Суич (избера път, по който да изпрати данните от източника до тяхното местоназначение в дадена локална мрежа) и рутер (самостоятелно устройство, което служи за управление на разпределянето на трафика (пакетите) информация между различни мрежи.)</p>
+            <h3 class="question">Кои са основните протоколи на транспортния слой?</h3>
+                <p class="answer">TCP, UDP</p>
+            <h3 class="question">Кои са основните разлики между OSI и DoD моделите?</h3>
+                <p class="answer">DoD - Това е клиентски сървър, използван за предаване на данни по интернет. <br /> OSI - Това е теоретичен модел, който се използва за изчислителна система.</p>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<div class="footer">
+    <p>Александър Богданов, Адриан Караденчев, Алекс Желязков</p>
+</div>
+
+    <!-- JAVASCRIPT IMPORTS -->
+    <script src="https://kit.fontawesome.com/6e1a50f031.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/essentials.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

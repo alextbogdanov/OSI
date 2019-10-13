@@ -1,0 +1,15 @@
+/* HISTORY CSS */
+
+#history-wrapper {
+    max-width: 800px;
+    margin: 60px auto 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 30px;
+    background-color: #e0d3cc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-align: justify;
+}
